@@ -13,16 +13,16 @@ export default async function Home() {
 
   // Working with this for now to model the homepage, will have to fix file structures and pages later
   return (
-    <main className="flex min-h-0 flex-col items-center justify-center text-blue-800">
+    <main className="flex min-h-0 flex-col items-center justify-center text-blue-800 bg-stone-100">
       <div className="container flex flex-col items-stretch justify-center gap-12 px-4 py-16">
         <h1 className="text-5xl font-extrabold self-center tracking-tight sm:text-[5rem]">
           Matthieu De Robles
         </h1>
-        <div className="group static flex flex-col justify-center items-center">
-          <div className="rounded-lg h-3/5 group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
-            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={500} objectFit="contain" alt="Judge Jury Executioner Image"/>
+        <div className="rounded-lg group flex flex-col justify-center items-center">
+          <div className="object-fill group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
+            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={500} alt="Judge Jury Executioner Image"/>
           </div>
-          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-200 transition duration-400 group-hover:text-opacity-100 group-hover:cursor-pointer">
+          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-200 transition duration-400 group-hover:text-opacity-90 group-hover:cursor-pointer">
             Lighting Design
           </h2>
         </div>
