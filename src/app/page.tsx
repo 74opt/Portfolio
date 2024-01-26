@@ -19,8 +19,8 @@ export default async function Home() {
           Matthieu De Robles
         </h1>
         <div className="group static flex flex-col justify-center items-center">
-          <div className="rounded-lg group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
-            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={500} height={800} alt="Judge Jury Executioner Image"/>
+          <div className="rounded-lg h-3/5 group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
+            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={500} objectFit="contain" alt="Judge Jury Executioner Image"/>
           </div>
           <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-200 transition duration-400 group-hover:text-opacity-100 group-hover:cursor-pointer">
             Lighting Design
