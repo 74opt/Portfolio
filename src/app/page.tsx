@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-0 flex-col items-center justify-center text-blue-800">
       <div className="container flex flex-col items-stretch justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+        <h1 className="text-5xl font-extrabold self-center tracking-tight sm:text-[5rem]">
           Matthieu De Robles
         </h1>
         <div className="group static flex flex-col justify-center items-center">
