@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      blur: {
+        xs: "1px",
+      }
     },
   },
   plugins: [],

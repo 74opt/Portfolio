@@ -1,4 +1,5 @@
 import { unstable_noStore as noStore } from "next/cache";
+import Image from "next/image";
 import Link from "next/link";
 
 import { CreatePost } from "@component/app/_components/create-post";
@@ -10,6 +11,27 @@ export default async function Home() {
   const hello = await api.post.hello.query({ text: "from tRPC" });
   const session = await getServerAuthSession();
 
+  // Working with this for now to model the homepage, will have to fix file structures and pages later
+  return (
+    <main className="flex min-h-0 flex-col items-center justify-center text-blue-800">
+      <div className="container flex flex-col items-stretch justify-center gap-12 px-4 py-16">
+        <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+          Matthieu De Robles
+        </h1>
+        <div className="group static flex flex-col justify-center items-center">
+          <div className="rounded-lg group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
+            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={500} height={800} alt="Judge Jury Executioner Image"/>
+          </div>
+          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-200 transition duration-400 group-hover:text-opacity-100 group-hover:cursor-pointer">
+            Lighting Design
+          </h2>
+        </div>
+      </div>
+    </main>
+  );
+
+// T3 App's default template page
+/*
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
@@ -62,6 +84,7 @@ export default async function Home() {
       </div>
     </main>
   );
+*/
 }
 
 async function CrudShowcase() {
