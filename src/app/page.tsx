@@ -13,18 +13,34 @@ export default async function Home() {
 
   // Working with this for now to model the homepage, will have to fix file structures and pages later
   return (
-    <main className="flex min-h-0 flex-col items-center justify-center text-blue-800 bg-stone-100">
-      <div className="container flex flex-col items-stretch justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold self-center tracking-tight sm:text-[5rem]">
-          Matthieu De Robles
-        </h1>
-        <div className="rounded-lg group flex flex-col justify-center items-center">
-          <div className="object-fill group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
+    <main className="flex flex-col items-center min-h-screen text-blue-800 bg-stone-100">
+      <h1 className="p-10 text-5xl font-extrabold self-center tracking-tight sm:text-[5rem]">
+        Matthieu De Robles
+      </h1>
+      <div className="flex items-start flex-row">
+        <div className="group flex flex-col justify-center items-center">
+          <div className="rounded-lg overflow-hidden p-6 object-fill group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
             <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={500} alt="Judge Jury Executioner Image"/>
           </div>
-          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-200 transition duration-400 group-hover:text-opacity-90 group-hover:cursor-pointer">
+          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-100 transition duration-400 group-hover:text-opacity-90 group-hover:cursor-pointer">
             Lighting Design
           </h2>
+        </div>
+        <div className="group flex flex-col justify-center items-center">
+          <div className="rounded-lg p-6 object-fill group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
+            <Image src="/portfolio_images/theatre/stage_management/clue/clue-5.jpg" width={800} height={500} alt="Stage Management Image"/>
+          </div>
+          <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-100 transition duration-400 group-hover:text-opacity-90 group-hover:cursor-pointer">
+            Stage Management
+          </h2>
+        </div>
+      </div>
+      <div className="flex mt-auto items-center place-content-around text-blue-700 text-4xl font-semibold border-t-4 border-gray-400 min-w-full bg-blue-100">
+        <div className="p-3">
+          About
+        </div>
+        <div className="p-3">
+          Contact
         </div>
       </div>
     </main>
