@@ -26,12 +26,20 @@ export default async function UI() {
             <object className="scale-120 px-16 pb-10" data="/resume.pdf?#zoom=83" type="application/pdf" width="840vw" height="990vh"></object>
           </div>
           <div>
-            <div className="px-32 pt-10 pb-2 text-3xl font-bold">
-              Contact Me!
+            <div className="px-32 pt-10 pb-3 text-3xl font-bold">
+              Check Me Out or Contact Me!
             </div>
-            <div className="px-32 flex flex-row">
+            <div className="px-32 pb-3 flex flex-row">
               <Image src="/linkedin.png" alt="LinkedIn Logo" width={32} height={16}></Image>
               <a className="pl-1 text-2xl hover:underline" href="https://www.linkedin.com/in/matthieu-de-robles-086a6228a/">LinkedIn</a>
+            </div>
+            <div className="px-32 pb-3 flex flex-row">
+              <Image src="/github.png" alt="GitHub Logo" width={32} height={16}></Image>
+              <a className="pl-1 text-2xl hover:underline" href="https://github.com/74opt">Github</a>
+            </div>
+            <div className="px-32 pb-3 flex flex-row">
+              <Image src="/gmail.png" alt="Gmail Logo" width={36} height={12}></Image>
+              <a className="pl-1 text-2xl hover:underline" href="mailto:matthieuderobles@gmail.com">Email</a>
             </div>
             {/* Email Form??? */}
           </div>
