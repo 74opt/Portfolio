@@ -18,7 +18,7 @@ export default function Page() {
       <div className="flex items-start flex-row gap-8">
         <Link href="projects/lighting" className="group flex flex-row justify-center items-center">
           <div className="rounded-xl border-2 overflow-hidden object-fill group-hover:cursor-pointer transition duration-300 group-hover:blur-sm group-hover:scale-105">
-            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={600} alt="Judge Jury Executioner Image"/>
+            <Image src="/portfolio_images/theatre/lighting/jje/IMG_8597.JPG" width={800} height={600} alt="Lighting Design Image"/>
           </div>
           <h2 className="absolute select-none text-opacity-0 text-5xl font-bold text-gray-50 transition duration-400 group-hover:text-opacity-90 group-hover:cursor-pointer">
             Lighting Design
@@ -44,24 +44,5 @@ export default function Page() {
         */}
       </div>
     </main>
-  );
-}
-
-async function CrudShowcase() {
-  const session = await getServerAuthSession();
-  if (!session?.user) return null;
-
-  const latestPost = await api.post.getLatest.query();
-
-  return (
-    <div className="w-full max-w-xs">
-      {latestPost ? (
-        <p className="truncate">Your most recent post: {latestPost.name}</p>
-      ) : (
-        <p>You have no posts yet.</p>
-      )}
-
-      <CreatePost />
-    </div>
   );
 }
