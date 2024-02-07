@@ -1,8 +1,6 @@
 // These imports will be removed in migration and figuring out what things actually do lmao
 import { unstable_noStore as noStore } from "next/cache";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
 import Carousel from "@component/app/_components/carousel";
 
 export default async function Page() {
@@ -35,7 +33,7 @@ export default async function Page() {
             Digital Black Box Rendering
           </h1>
           <div className="text-xl">
-            This is a render of a black box theatre I created as a project to scale down Hadestown to fit the spatial and financial constraints of a black box theatre. Illustrated within is the set and lights that would be utilized for the production. 
+            This is a render of a black box theatre I created as a project to scale down Anaïs Mitchell&apos;s Hadestown to fit the spatial and financial constraints of a black box theatre. Illustrated within is the set and lights that would be utilized for the production. 
           </div>
           <Carousel images={[
             "/portfolio_images/theatre/lighting/hadestown_digital/hadestown1.png",
