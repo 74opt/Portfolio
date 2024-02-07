@@ -2,10 +2,11 @@ import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CreatePost } from "@component/app/_components/create-post";
-import { getServerAuthSession } from "@component/server/auth";
-import { api } from "@component/trpc/server";
-
+/** TODOS:
+ * Utilize more components
+ * Make mobile friendly
+ * Migrate to project with only nextjs and tailwind
+*/ 
 export default function Page() {
   noStore();
 
